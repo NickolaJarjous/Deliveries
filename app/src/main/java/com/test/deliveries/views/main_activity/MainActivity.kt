@@ -30,7 +30,7 @@ import com.test.deliveries.views.delivery_detail_dialog.DeliveryDetailDialog
 import com.test.deliveries.views.main_activity.responses.GetDeliveriesResponse
 
 
-private const val ITEMS_ON_PAGE = 10
+private const val ITEMS_ON_PAGE = 20
 
 class MainActivity : AppCompatActivity(), EndlessRecyclerView.Pager,
     DeliveriesAdapter.OnDeliveriesRecyclerViewClickListener {
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity(), EndlessRecyclerView.Pager,
         setStatusBarColor()
         setUpRecyclerView()
 
-        // get the first 10 deliveries
+        // get the first 20 deliveries
         mViewModel.callGetDeliveries(offset, ITEMS_ON_PAGE)
     }
 
@@ -174,7 +174,7 @@ class MainActivity : AppCompatActivity(), EndlessRecyclerView.Pager,
     override fun loadNextPage() {
         Log.d("MAIN_LOADING","true")
         loading = true
-        // load the next 10 items
+        // load the next 20 items
         mViewModel.callGetDeliveries(offset, ITEMS_ON_PAGE)
 
     }
