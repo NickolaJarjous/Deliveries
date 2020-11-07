@@ -62,7 +62,7 @@ class MainActivityRepository(private val deliveriesDao: DeliveriesDao){
                     // call success
                     apiStateListener.onSuccess(response.body())
                     Log.d("GET_DELI_REPO_SUCCESS", response.body()!!.size.toString())
-                    Log.d("GET_DELI_REPO_SUCCESS", GsonBuilder().setPrettyPrinting().create().toJson(response))
+                    //Log.d("GET_DELI_REPO_SUCCESS", GsonBuilder().setPrettyPrinting().create().toJson(response))
                 } else {
                     // call failed
                     Log.d("GET_DELI_REPO_FAIL", "Server Error")
