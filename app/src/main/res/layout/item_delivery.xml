@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/delivery_adapter_swipe_reveal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <!-- Your secondary layout here -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/delivery_adapter_edit_ll"
+                android:gravity="center"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/delivery_adapter_bookmark_btn_iv"
+                    android:contentDescription="@string/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_unbookmark" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Your main layout here -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginStart="5dp"
+                android:contentDescription="@string/description"
+                android:id="@+id/delivery_adapter_main_iv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:id="@+id/delivery_adapter_main_ll"
+                android:layout_gravity="center"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/delivery_adapter_from_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="5dp"
+                        android:ems="4"
+                        android:lines="1"
+                        android:text="@string/sample_name1"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_marginEnd="10dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/delivery_adapter_fromto_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_from_to" />
+
+                    <TextView
+                        android:ems="4"
+                        android:id="@+id/delivery_adapter_to_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/sample_name2"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/delivery_adapter_time_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:contentDescription="@string/description"
+                        android:layout_marginStart="5dp"
+                        app:srcCompat="@drawable/ic_alarm_clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:ems="11"
+                        android:id="@+id/delivery_adapter_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:layout_marginStart="5dp"
+                        android:text="2017-11-11T02:28:29-08:00"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:contentDescription="@string/description"
+                        android:layout_marginStart="3dp"
+                        app:srcCompat="@drawable/ic_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:id="@+id/delivery_adapter_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:text="199.99$"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:contentDescription="@string/description"
+                android:id="@+id/delivery_adapter_bookmark_iv"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center|top"
+                app:srcCompat="@drawable/ic_bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

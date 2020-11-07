@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Deliveries</string>
+    <string name="description">description</string>
+    <string name="nan">NaN</string>
+    <string name="example_remark">Minim veniam minim nisi ullamco consequat anim reprehenderit laboris aliquip voluptate sit.</string>
+    <string name="sample_name1">Nickoula</string>
+    <string name="sample_name2">Emar</string>
+    <string name="sample_phone">+1 (899) 523-3905</string>
+    <string name="sample_email">hardingwelch@comdom.com</string>
+    <string name="server_error">Server error occurred</string>
+    <string name="internet_error">No internet connection!</string>
+</resources>

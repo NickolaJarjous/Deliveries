@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/delivery_dialog_white_ll"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/dialog_bg">
+
+            <LinearLayout
+                android:id="@+id/delivery_dialog_blue_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="0.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+
+                    <ImageView
+                        android:scaleType="fitCenter"
+                        android:id="@+id/delivery_dialog_main_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <ImageView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:id="@+id/delivery_dialog_close_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        app:srcCompat="@drawable/ic_close" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        app:srcCompat="@drawable/ic_alarm_clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:ems="11"
+                        android:id="@+id/delivery_dialog_date_tv"
+                        android:paddingHorizontal="5dp"
+                        android:lines="1"
+                        android:gravity="center|start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="2017-11-11T02:28:29-08:00"
+                        android:textColor="#000"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_weight="0.6"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+
+                    <ImageView
+                        android:layout_gravity="end"
+                        app:srcCompat="@drawable/ic_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/delivery_dialog_price_tv"
+                        android:paddingHorizontal="5dp"
+                        android:lines="1"
+                        android:gravity="center|end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:text="200$"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:textStyle="italic"
+                    android:id="@+id/delivery_dialog_remark_tv"
+                    android:textColor="#000"
+                    android:lines="2"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:text="@string/example_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+
+                    <TextView
+                        android:id="@+id/delivery_dialog_start_tv"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:layout_gravity="center|top"
+                        android:text="@string/sample_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="bottom"
+                        app:srcCompat="@drawable/ic_from_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/delivery_dialog_end_tv"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:layout_gravity="center|top"
+                        android:text="@string/sample_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <View
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#737373"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+
+
+                    <ImageView
+                        android:layout_gravity="bottom"
+                        app:srcCompat="@drawable/ic_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/delivery_dialog_name_tv"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:layout_gravity="center|top"
+                        android:text="@string/sample_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+
+                    <ImageView
+                        android:layout_gravity="bottom"
+                        app:srcCompat="@drawable/ic_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/delivery_dialog_phone_tv"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:layout_gravity="center|top"
+                        android:text="@string/sample_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_gravity="bottom"
+                        app:srcCompat="@drawable/ic_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/delivery_dialog_email_tv"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:layout_gravity="center|top"
+                        android:text="@string/sample_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <net.colindodd.toggleimagebutton.ToggleImageButton
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/delivery_dialog_btn"
+                    android:layout_gravity="center"
+                    app:tib_drawable_off="@drawable/ic_unbookmark"
+                    app:tib_drawable_on="@drawable/ic_bookmark"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>
